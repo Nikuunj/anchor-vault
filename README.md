@@ -1,5 +1,6 @@
 # Anchor Vault Program
 
+![Project Banner](./image.png)
 A simple Solana smart contract built with Anchor. It implements a basic vault where users can:
 
 - Initialize a vault PDA (Program Derived Address) with a state account to store bumps.
@@ -8,12 +9,14 @@ A simple Solana smart contract built with Anchor. It implements a basic vault wh
 - Close the vault, transferring remaining SOL back to the user and closing the state account.
 
 ## Prerequisites
+
 - Anchor CLI (version 0.32.1 or later) installed via AVM.
 - Surfpool CLI installed (for enhanced local testing and runbooks: `brew install surfpool` on macOS, or from source [surfpool](https://surfpool.run/)).
 - Solana CLI tools.
 - Node.js/Yarn for tests.
 
 ## Running Tests
+
 To run the integration tests against a Surfpool local validator:
 
 1. In one terminal window, start Surfpool in your project directory:
@@ -25,3 +28,4 @@ This launches a local Surfnet validator and deploys your program.
 This will execute the tests in `tests/anchor-vault-q4-25.ts`, covering initialize, deposit, withdraw, and close scenarios.
 
 For standard local testing without Surfpool, just run `anchor test`.
+
